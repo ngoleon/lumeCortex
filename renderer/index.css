@@ -1,0 +1,78 @@
+body {
+    font-family: sans-serif;
+    padding: 2vw; /* scales with window */
+    background: #111;
+    color: #eee;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2vh;
+    max-width: 100%; /* allow full width */
+  }
+  
+  
+  /* Chat box */
+  #chat {
+    height: 40vh; /* scales with screen height */
+    overflow-y: auto;
+    border: 1px solid #444;
+    padding: 1vw;
+    background: #1a1a1a;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  #chat div {
+    margin: 5px 0;
+    white-space: normal; /* allow text to wrap */
+    word-break: break-word; /* break long tokens */
+  }  
+  
+  #chat .user {
+    color: #66d9ef;
+  }
+  
+  #chat .ai {
+    color: #a6e22e;
+  }
+  
+  /* Token chart */
+  #tokenChart {
+    border: 1px solid #444;
+  }
+  
+  /* Inputs */
+  select, input, button {
+    font-size: 1rem;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .input-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .token-word {
+    cursor: pointer;
+    margin-right: 2px;
+    white-space: normal; /* not 'pre' or 'nowrap' */
+    display: inline;     /* prevents weird block spacing */
+    transition: background-color 0.3s;
+  }
+  
+  .token-word:hover {
+    text-decoration: underline;
+  }
+  
+  .token-word.highlighted {
+    background-color: rgba(75, 192, 192, 0.3);
+  }
+  

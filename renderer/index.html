@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LumeCortex</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <main id="app">
+    <h2>LumeCortex</h2>
+
+    <label for="persona">Choose a Persona:</label>
+    <select id="persona"></select>
+
+    <div class="container">
+      <canvas id="tokenChart"></canvas>
+      <div id="chat"></div>
+    </div>
+
+    <div class="input-group">
+      <input type="text" id="userInput" placeholder="Say something..." />
+      <button id="send">Send</button>
+    </div>
+  </main>
+
+  <!-- Main Script -->
+  <script type="module" src="renderer.js"></script>
+</body>
+</html>
